@@ -47,7 +47,7 @@
 &kp GRAVE &kp F1   &kp F2   &kp F3  &kp F4   &kp F5                       &kp F6       &kp F7    &kp F8      &kp F9    &kp F10   &kp DEL
 &trans    &trans   &trans   &trans  &trans   &trans                       &trans       &trans    &trans      &trans    &trans    &kp RBKT
 &trans    &trans   &trans   &trans  &trans   &trans                       &trans       &kp LEFT  &kp DOWN    &kp UP    &kp RIGHT &kp BACKSLASH
-&kp NUBS  &trans   &trans   &trans  &trans   &trans    &kp F11   &kp F12  &trans       &trans    &trans      &trans    &trans    &trans
+&trans    &kp NUBS &trans   &trans  &trans   &trans    &kp F11   &kp F12  &trans       &trans    &trans      &trans    &trans    &trans
                             &trans  &trans   &trans    &trans    &trans   &mo ADJUST   &trans    &trans
             >;
 
