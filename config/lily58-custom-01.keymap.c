@@ -45,7 +45,7 @@
 &trans    &trans   &trans   &trans  &trans   &trans                       &trans    &trans    &trans      &trans    &trans    &kp RBKT
 &trans    &trans   &trans   &trans  &trans   &trans                       &trans    &kp LEFT  &kp DOWN    &kp UP    &kp RIGHT &kp BACKSLASH
 &kp NUBS  &trans   &trans   &trans  &trans   &trans    &kp F11   &kp F12  &trans    &trans    &trans      &trans    &trans    &trans
-                                    &trans   &trans    &trans    &trans   &mo 3     &trans    &trans      &trans
+                            &trans  &trans   &trans    &trans    &trans   &mo 3     &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
