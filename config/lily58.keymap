@@ -39,16 +39,16 @@
         lower_layer {
 // ------------------------------------------------------------------------------------------------------------
 // |   `   |  F1  |  F2 |  F3  |  F4  |  F5  |                  |  F6  |  F7   |  F8   |  F9  |  F10  |  DEL  |
-// |       |      |     |      |      |      |                  |      |       |       |      |       |  "]"  |
-// |       |      |     |      |      |      |                  |      |   <-  |   v   |  ^   |  ->   |   \   |
+// |       |      |     |  ^   |      |      |                  |      |       |       |      |       |  "]"  |
+// |       | NUBS |  <- |  v   |  ->  |      |                  |      |   <-  |   v   |  ^   |  ->   |   \   |
 // |       | NUBS |     |      |      |      |  F11  |  |  F12  |      |       |       |      |       |       |
 //                      |      |      |      |       |  |       |ADJUST|       |       |
             bindings = <
-&kp GRAVE &kp F1   &kp F2   &kp F3  &kp F4   &kp F5                       &kp F6       &kp F7    &kp F8      &kp F9    &kp F10   &kp DEL
-&trans    &trans   &trans   &trans  &trans   &trans                       &trans       &trans    &trans      &trans    &trans    &kp RBKT
-&trans    &trans   &trans   &trans  &trans   &trans                       &trans       &kp LEFT  &kp DOWN    &kp UP    &kp RIGHT &kp BACKSLASH
-&trans    &kp NUBS &trans   &trans  &trans   &trans    &kp F11   &kp F12  &trans       &trans    &trans      &trans    &trans    &trans
-                            &trans  &trans   &trans    &trans    &trans   &mo ADJUST   &trans    &trans
+&kp GRAVE &kp F1   &kp F2   &kp F3   &kp F4    &kp F5                       &kp F6       &kp F7    &kp F8      &kp F9    &kp F10   &kp DEL
+&trans    &trans   &trans   &kp UP   &trans    &trans                       &trans       &trans    &trans      &trans    &trans    &kp RBKT
+&trans    &kp NUBS &kp LEFT &kp DOWN &kp RIGHT &trans                       &trans       &kp LEFT  &kp DOWN    &kp UP    &kp RIGHT &kp BACKSLASH
+&trans    &kp NUBS &trans   &trans   &trans    &trans    &kp F11   &kp F12  &trans       &trans    &trans      &trans    &trans    &trans
+                            &trans   &trans    &trans    &trans    &trans   &mo ADJUST   &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -56,17 +56,17 @@
 
         raise_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |   `   |  F1 |  F2 |  F3  |  F4  |  F5  |                   |  F6  |  F7   |  F8   |  F9  |  F10  |  DEL  |
-// | CAPS  |     |     |      |      |      |                   |      |       |       |      | HOME  |  END  |
-// |       |     |     |      |      |      |                   |      |   <-  |   v   |  ^   |  ->   | PG_UP |
-// |       |     |     |      |      |      |  F11   |  |  F12  |      |       |       |      |       | PG_DN |
-//                     |      |      |ADJUST|        |  |       |      |       |       |
+// |   `   |  F1  |  F2 |  F3  |  F4  |  F5  |                   |  F6  |  F7   |  F8   |  F9  |  F10  |  DEL  |
+// | CAPS  |      |     |  ^   |      |      |                   |      |       |       |      | HOME  |  END  |
+// |       | NUBS | <-  |  v   |  ->  |      |                   |      |   <-  |   v   |  ^   |  ->   | PG_UP |
+// |       | NUBS |     |      |      |      |  F11   |  |  F12  |      |       |       |      |       | PG_DN |
+//                      |      |      |ADJUST|        |  |       |      |       |       |
             bindings = <
-&kp GRAVE &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                         &kp F6    &kp F7    &kp F8    &kp F9   &kp F10   &kp DEL
-&kp CAPS  &trans   &trans   &trans  &trans  &trans                         &trans    &trans    &trans    &trans   &kp HOME  &kp END
-&trans    &trans   &trans   &trans  &trans  &trans                         &trans    &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &kp PG_UP
-&trans    &trans   &trans   &trans  &trans  &trans      &kp F11  &kp F12   &trans    &trans    &trans    &trans   &trans    &kp PG_DN
-                            &trans  &trans  &mo ADJUST  &trans   &trans    &trans    &trans    &trans
+&kp GRAVE &kp F1   &kp F2   &kp F3   &kp F4    &kp F5                         &kp F6    &kp F7    &kp F8    &kp F9   &kp F10   &kp DEL
+&kp CAPS  &trans   &trans   &kp UP   &trans    &trans                         &trans    &trans    &trans    &trans   &kp HOME  &kp END
+&trans    &kp NUBS &kp LEFT &kp DOWN &kp RIGHT &trans                         &trans    &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &kp PG_UP
+&trans    &kp NUBS &trans   &trans   &trans    &trans      &kp F11  &kp F12   &trans    &trans    &trans    &trans   &trans    &kp PG_DN
+                            &trans   &trans    &mo ADJUST  &trans   &trans    &trans    &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
